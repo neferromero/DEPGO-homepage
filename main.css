@@ -84,29 +84,32 @@ header > .btn-btn-primary {
 
 .widget > .texto1 {
     color: #091527;
-    font-style: bold;
     font-size: 24px;
     display: grid;
-    grid-column-start: 3;
-    grid-column-end: 7;
-    grid-row-start: 1;
-    grid-row-end: 2;
-}
+    align-items: center;
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    line-height: 41px;
+    text-align: start;
+ }
 
 .widget > .dropdown{
     display: grid;
+    align-items: top;
     grid-column-start: 2;
-    grid-column-end: 4;
-    grid-row-start: 2;
-    grid-row-end: 3;
+    grid-column-end: 5;
+    grid-row-start: 4;
+    grid-row-end: 5;
 }
 
-.widget .imagen0 {
+.widget > .imagen0 {
     display: grid;
-    grid-column-start: 4;
-    grid-column-end: 6;
+    grid-column-start: 6;
+    grid-column-end: 8;
     grid-row-start: 2;
-    grid-row-end: 4;
+    grid-row-end: 5;
 }
 .contenedor .widget1 {
     height: 514px;
@@ -268,23 +271,132 @@ header > .btn-btn-primary {
     font-size: 12px;
     line-height: 20px;
     /* identical to box height */
-    display: flex;
+    display: grid;
     flex-direction: row;
     justify-content: space-around;
     text-align: center;
     border-radius: 20px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    gap: 5px;
 }
 
+.widget2 > .h2 {
+    color: #091527;
+    display: grid;
+    grid-column-start: 3;
+    grid-column-end: 8;
+    grid-row-start: 1;
+    grid-row-end: 2;  
+}
+
+.widget2 > .texto7 {
+    font-size: 24px;
+    display: grid;
+    grid-column-start: 2;
+    grid-column-end: 6;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    text-align: start;  
+}
+
+.widget2 > .imagen7 {
+    display: grid;
+    grid-column-start: 7;
+    grid-column-end: 8;
+    grid-row-start: 2;
+    grid-row-end: 5;  
+}
 .contenedor .reviews {
-    grid-column: span 3;
-    background: floralwhite;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    grid-row: 5/6;
+        height: 200px;
+        color: #091527;
+        font-style: normal;
+        font-size: 12px;
+        line-height: 20px;
+        /* identical to box height */
+        display: grid;
+        flex-direction: row;
+        justify-content: space-around;
+        text-align: center;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr  ;
+        gap: 5px;
 }
 
+.reviews > .p1 {
+    display: grid;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;  
+}
+
+.reviews > .p2 {
+    display: grid;
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end: 4;  
+}
+
+.reviews > .p3 {
+    display: grid;
+    grid-column-start: 6;
+    grid-column-end: 7;
+    grid-row-start: 3;
+    grid-row-end: 4;  
+}
+
+.reviews > .avatar1 {
+    display: grid;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end:2 ;  
+}
+
+.reviews > .avatar2 {
+    display: grid;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 4;
+    grid-column-end: 5;  
+}
+
+.reviews > .avatar3 {
+    display: grid;
+    grid-column-start: 6;
+    grid-column-end: 7;
+    grid-row-start: 1;
+    grid-row-end:2 ;  
+ }
+
+.reviews > .calificacion1 {
+    display: grid;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end:3 ;  
+    align-items: center;
+}
+
+.reviews > .calificacion2 {
+    display: grid;
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end:3 ;  
+    align-items: center;
+}
+
+.reviews > .calificacion3 {
+    display: grid;
+    grid-column-start: 6;
+    grid-column-end: 7;
+    grid-row-start: 2;
+    grid-row-end: 3;  
+    align-items: center;
+}
 .contenedor .widget,
 .contenedor .widget1,
 .contenedor .widget2
@@ -292,6 +404,10 @@ header > .btn-btn-primary {
     height: 540px;
     align-items: center;
     justify-content: center;
+}
+
+.contenedor .widget {
+    grid-column: span 3;
 }
 
 .contenedor .widget1 {
@@ -302,6 +418,10 @@ header > .btn-btn-primary {
 .contenedor .widget2 {
     grid-column: span 3;
     grid-row: 4/5;
+}
+
+.contenedor .reviews{
+    grid-column: span 3;
 }
 
 .contenedor .footer {
